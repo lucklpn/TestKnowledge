@@ -13,6 +13,7 @@ public class Main {
 		 * */
 		Matrix matrix = new Matrix();
 		
+		//Fill List with recursive Array
 		List<Object> childrenArray2 = Arrays.asList(3);
 		List<Object> childrenArray1 = Arrays.asList(1,2,childrenArray2);
 		List<Object> mainArray = Arrays.asList(childrenArray1,4);

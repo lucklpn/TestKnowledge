@@ -8,16 +8,16 @@ public class Matrix {
 	
 	public Matrix matrixRecursiveToArray(List<?> param) {
 		for (Object element : param) {
-			if (element instanceof List) 
+			if (element instanceof List)
 				this.matrixRecursiveToArray((List<?>)element);
 			else
-				getInteger(element);
+				setResult(element);
 		}
 		
 		return this;
 	}
 	
-	private void getInteger(Object param) {
+	private void setResult(Object param) {
 		try {
 			result.add((Integer)param);
 		} catch (ClassCastException e) {
@@ -25,6 +25,7 @@ public class Matrix {
 		}
 	}
 	
+	@Override
 	public String toString() {
 		String resultString = "[";
 		for (Integer element : result)
