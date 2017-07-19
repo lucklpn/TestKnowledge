@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Matrix {
-	private List<Integer> result = new ArrayList<>();
+	private List<Integer> result;
+	
+	public Matrix() {
+		result = new ArrayList<>();
+	}
 	
 	public Matrix matrixRecursiveToArray(List<?> param) {
 		for (Object element : param) {
