@@ -11,7 +11,8 @@ public class Main {
 		 * nested arrays of integers into a flat array of integers. 
 		 * e.g. [[1,2,[3]],4] -> [1,2,3,4]. 
 		 * */
-		Matrix matrix = new Matrix();
+		Matrix matrix;
+		matrix = new Matrix();
 		
 		//Fill List with recursive Array
 		List<Object> childrenArray2 = Arrays.asList(3);
