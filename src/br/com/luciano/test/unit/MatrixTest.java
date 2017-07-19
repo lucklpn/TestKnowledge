@@ -14,7 +14,8 @@ public class MatrixTest {
 	@Test
 	public void testWith4Number() {
 		//Main test
-		Matrix matrix = new Matrix();
+		Matrix matrix;
+		matrix = new Matrix();
 		String expected = "[1,2,3,4]";
 		
 		List<Object> childrenArray2 = Arrays.asList(3);
@@ -27,7 +28,8 @@ public class MatrixTest {
 	@Test
 	public void testWith10Number() {
 		//Addicional test
-		Matrix matrix = new Matrix();
+		Matrix matrix;
+		matrix = new Matrix();
 		String expected = "[1,2,3,4,5,6,7,8,9,10]";
 		
 		List<Object> childrenArray3 = Arrays.asList(7,8,9);
@@ -42,7 +44,8 @@ public class MatrixTest {
 	@Test(expected=ClassCastException.class)
 	public void testWithFail() {
 		//Test with fail
-		Matrix matrix = new Matrix();
+		Matrix matrix;
+		matrix = new Matrix();
 		
 		List<Object> childrenArray2 = Arrays.asList(3,5.5); // Error cast 5.5
 		List<Object> childrenArray1 = Arrays.asList(1,2,childrenArray2);
